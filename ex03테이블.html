@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--표형태를 제작하는 태그는 table 태그 
+    tr: 표의 행을 제작할 때 사용. 실제 데이터가 작성되는 공간 xx
+    td: 표의 열을 제작할 때 사용. 실제 데이터가 작성되는 공간
+    th: 표의 열을 제작할 때 사용. 실제 데이터가 작성되는 공간(컬럼을 제작)
+    -->
+    <table border="1px solid black">
+        <tr bgcolor="yellow">
+            <th>이름</th>
+            <!--셀을 가로로 병합할 때는 colspan="합치는 칸"-->
+            <th colspan="2">성별,주소</th>
+            <th>직급</th>
+        </tr>
+        <tr>
+            <td align="center">정형</td>
+            <td>남자</td>
+            <!--셀을 세로로 병합할 때는 rowspan="합칠 값"-->
+            <td>광주</td>
+            <td rowspan="2">선임</td>
+        </tr>
+             <td>손지영</td>
+             <td>여자</td>
+             <td>광주</td>
+        <tr>
+        </tr>
+    </table>
+</body>
+</html>

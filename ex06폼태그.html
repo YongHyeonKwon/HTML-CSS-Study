@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--데이터를 입력양식에 맞게 한 번에 모아서 다른 서버에 전송할 때 <form>
+    필수속성
+    1) action: 데이터를 전송할 위치
+    2) method: get,post 방식
+    3) name: form태그의 이름을 지정 
+    -->
+    <form action="ex05A태그.html" method="get" name="이력서">
+<!--글자를 입력하는 인풋창
+    input태그는 모든 데이터의 값을 value속성 안에 저장
+-->
+<input type="text" placeholder="아이디를 입력해라." maxlength="5">
+<!--비밀번호를 입력하는 인풋창 type = password-->
+<input type="password" placeholder="비번을 입력해라." maxlength="10">
+<br>
+<!--선택하는 방법
+    checkbox vs radio
+    checkbox
+    1) 복수개의 값을 설정 할 수 있다.
+    2) *name(구분값)과 *value(실제 값)가 필수다.
+    radio
+    1) 무조건 한 개만 설정 할 수 있다.
+    2) 반드시 name으로 그룹화를 시켜야 한다.
+-->
+    <input type="checkbox" name="checkname" value="val1">
+    <input type="checkbox" name="checkname" value="val2">
+    <br><br>
+    남자 <input type="radio" name="gender" value="men">
+    여자<input type="radio" name="gender" value="women">
+    <br>
+    <input type="file">
+    <input type="color">
+    <input type="date"><input type="datetime-local">
+    <input type="range">
+    <br>
+    <input type="submit" value="보내기">
+    <input type="reset" value="리셋">
+    <!--선택해서 입력받는 창-->
+    <select>
+        <option name="" value="">naver.com</option>
+        <option>daum.net</option>
+    </select>
+    </form>
+</body>
+</html>
